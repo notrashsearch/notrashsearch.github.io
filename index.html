@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NoTrash Search</title>
+    <style>
+      * {
+        font-family: sans-serif;
+        box-sizing: content-box;
+      }
+      html,
+      body {
+        height: 100%;
+        margin: 0;
+      }
+      /* .gsc-adBlock {
+        display: none !important;
+      } */
+      input,
+      button {
+        line-height: 2em;
+        border-radius: 0;
+        border: 1px solid silver;
+        padding: 4px 8px;
+        font-size: 14px;
+        height: 33px;
+      }
+      input {
+        padding-left: 8px;
+        width: 800px;
+      }
+      .container {
+        padding: 0.5em;
+        padding-bottom: 50px;
+      }
+      .root {
+        min-height: 100%;
+      }
+      footer {
+        height: 50px;
+        margin-top: -50px;
+        margin-left: 0.5em;
+      }
+      h1 > a {
+        color: inherit;
+      }
+      button:hover {
+        cursor: pointer;
+      }
+      .gsc-webResult.gsc-result {
+        border: none !important;
+      }
+      .gsc-control-cse {
+        margin-top: 1em;
+      }
+      @media (prefers-color-scheme: dark) {
+        body,
+        .gsc-control-cse {
+          color: #eee !important;
+          background-color: #121212 !important;
+        }
+        .gs-webResult .gs-snippet,
+        .gs-fileFormatType {
+          color: #eee !important;
+        }
+        input {
+          background-color: #121212;
+          color: #eee;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <script
+      async
+      src="https://cse.google.com/cse.js?cx=4fe8316b0e52b04f0"
+    ></script>
+    <div class="root">
+      <div class="container">
+        <h1><a href="/">No Trash Search</a></h1>
+        <form action="/">
+          <input type="text" name="q" placeholder="search" id="q" />
+          <button type="submit">Search</button>
+        </form>
+
+        <div class="gcse-searchresults-only"></div>
+      </div>
+    </div>
+    <footer>
+      <a href="/about.html">About</a>
+      <a href="https://twitter.com/rickwierenga">Twitter</a>
+    </footer>
+    <script>
+      const params = new URLSearchParams(window.location.search);
+      if (params.has("q")) {
+        document.getElementById("q").value = params.get("q");
+      }
+    </script>
+  </body>
+</html>
