@@ -30,6 +30,7 @@
       input {
         padding-left: 8px;
         width: 800px;
+        max-width: 80%;
       }
       .container {
         padding: 0.5em;
@@ -54,6 +55,7 @@
       }
       .gsc-control-cse {
         margin-top: 1em;
+        border: none !important;
       }
       @media (prefers-color-scheme: dark) {
         body,
@@ -67,11 +69,17 @@
         }
         input,
         button {
-          background-color: #121212;
+          background-color: #1d1d1d;
           color: #eee;
         }
-        a {
-          color: #3e8ede;
+        a,
+        .gs-title,
+        .gs-title b,
+        .gcsc-find-more-on-google {
+          color: #3e8ede !important;
+        }
+        .gcsc-find-more-on-google-magnifier {
+          fill: #3e8ede !important;
         }
       }
       @media (max-width: 800px) {
@@ -93,7 +101,11 @@
 
       gtag("config", "G-MZK17SFJF7");
     </script>
-    <script data-ad-client="ca-pub-8121712391460276" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script
+      data-ad-client="ca-pub-8121712391460276"
+      async
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+    ></script>
   </head>
   <body>
     <script
