@@ -4,7 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>NoTrash Search</title>
+    <title>No Trash Search</title>
+    <link
+      rel="search"
+      type="application/opensearchdescription+xml"
+      title="searchTitle"
+      href="/opensearch.xml"
+    />
     <style>
       * {
         font-family: sans-serif;
@@ -42,6 +48,9 @@
       footer {
         height: 50px;
         margin-top: -50px;
+        margin-left: 0.5em;
+      }
+      footer a {
         margin-left: 0.5em;
       }
       h1 > a {
@@ -129,6 +138,7 @@
       <a href="https://github.com/notrashsearch/notrashsearch.github.io/"
         >Source Code</a
       >
+      <a href="https://www.buymeacoffee.com/rickwierenga">Buy me a Coffee</a>
     </footer>
     <script>
       const params = new URLSearchParams(window.location.search);

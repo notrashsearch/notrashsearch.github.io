@@ -5,6 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>No Trash Search</title>
+    <link
+      rel="search"
+      type="application/opensearchdescription+xml"
+      title="searchTitle"
+      href="/opensearch.xml"
+    />
     <style>
       * {
         font-family: sans-serif;
@@ -44,6 +50,9 @@
         margin-top: -50px;
         margin-left: 0.5em;
       }
+      code {
+        font-family: "Courier New", Courier, monospace;
+      }
     </style>
     <script
       async
@@ -76,6 +85,33 @@
         <a href="https://forms.gle/F2wJ4KpD3PBiZ2kb8"
           >Missing a site? Suggest it.</a
         >
+
+        <h2>How to use a custom search engine?</h2>
+        <code>http://notrashsearch.github.io/?q=%s</code>
+        <ul>
+          <li>
+            <a
+              href="https://support.google.com/chrome/answer/95426?co=GENIE.Platform%3DDesktop&hl=en#zippy=%2Curl-with-s-in-place-of-query-field"
+              >Chrome/Chromium</a
+            >
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <a
+              href="https://support.mozilla.org/en-US/kb/add-or-remove-search-engine-firefox#w_add-a-search-engine-from-the-search-bar"
+              >Firefox</a
+            >
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <a
+              href="https://help.opera.com/en/latest/search/#customSearchEngines"
+              >Opera</a
+            >
+          </li>
+        </ul>
       </div>
     </div>
     <footer>
